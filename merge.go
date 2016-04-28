@@ -1,6 +1,6 @@
 package main
 
-// merge uses 2 finger algorithms to merge 2 sorted arrays.
+// merge uses 2 fingers algorithm to merge 2 sorted arrays.
 // O(|a| + |b|) = O(n) time complexity
 func merge(a []int, b []int) []int {
 	n := len(a) + len(b)
