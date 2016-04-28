@@ -24,6 +24,11 @@ func TestMerge(t *testing.T) {
 			sortedB: []int{0},
 			want:    []int{0, 1, 2, 3},
 		},
+		{
+			sortedA: []int{1, 2, 6, 7},
+			sortedB: []int{1, 3, 5, 9},
+			want:    []int{1, 1, 2, 3, 5, 6, 7, 9},
+		},
 	}
 
 	for _, test := range tests {
