@@ -12,3 +12,9 @@ Sorting Algorithms in Golang.
     |
   (key)
 ```
+
+## Merge Sort
+> Given an Array of size n,
+  Splits into 2 Arrays of size n/2,
+  Sort each of the 2 Arrays,
+  Merge them up into a sorted Array of size n.
