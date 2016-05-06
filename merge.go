@@ -1,5 +1,22 @@
 package main
 
+import "fmt"
+
+func main() {
+	fmt.Println(divide([]int{10, 8, 3}))
+
+}
+func divide(input []int) []int {
+
+	if len(input) == 1 {
+		return input
+	}
+
+	a := divide(input[:len(input)/2])
+	b := divide(input[len(input)/2:])
+	return merge(a, b)
+}
+
 // merge uses 2 fingers algorithm to merge 2 sorted arrays.
 // O(|a| + |b|) = O(n) time complexity
 func merge(a []int, b []int) []int {
